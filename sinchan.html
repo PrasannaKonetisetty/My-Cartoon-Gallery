@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinchan | Cartoon Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    h1{
+      background-color: black;
+      color : whitesmoke; 
+      padding: 50px;
+      text-align: center;
+    }
+    footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin: 10px;
+  display: flex;
+}
+.gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px; 
+      padding: 20px;
+    }
+
+section{
+  padding: 15px;
+ background-color: lightblue;
+}
+p{
+  text-align: center;
+}
+.btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: deeppink;
+}
+
+.story-card {
+  display: none;
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1{
+  font-size: 70;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shinchan - Funny & Naughty</h1>
+  </header>
+  <section>
+    <div class="content">
+      <h2>About Sinchan</h2>
+    <button class="btn" onclick="toggleAbout()">📖 Show About Shinchan</button>
+
+    <div class="story-card" id="aboutShinchan">
+      <p>
+        Shinchan is a naughty 5-year-old kid 😜 who lives in Kasukabe, Japan 🇯🇵.<br>
+        He always disturbs his mom Misae with silly pranks 😂.<br>
+        His dog Shiro 🐶 is very loyal and always follows him everywhere.<br>
+        Shinchan loves dancing half-naked in the house 🕺.<br>
+        He cares a lot for his sister Himawari 👶 even though he irritates her.<br>
+        Sometimes, his dad Hiroshi faces funny problems because of Shinchan 🤦‍♂️.<br>
+        There are also emotional scenes when the family goes through hard times 😢.<br>
+        Shinchan supports his friends in every problem 💪.<br>
+        The show makes us laugh and also touches our heart 💖.<br>
+        It’s not just comedy – it’s childhood, friendship, and family in one cartoon 🎨👨‍👩‍👧‍👦.
+      </p>
+    </div>
+
+    <div class="gallery">
+  
+      <img src="sin1.png" alt="Shinchan Image 1">
+      <img src="sin2.jpeg" alt="Shinchan Image 2">
+      <img src="sin3.jpeg" alt="Shinchan Image 3">
+      <img src="sin4.jpeg" alt="Shinchan Image 4">
+      <img src="sin5.png" alt="Shinchan Image 5">
+      <img src="sin6.jpeg" alt="Shinchan Image 6">
+      <img src="sin7.jpeg" alt="Shinchan Image 7">
+      <img src="sin8.png" alt="Shinchan Image 8">
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>Made By KONETISETTY PRASANNA</p>
+  </footer>
+
+  <script>
+    function toggleAbout() {
+      const aboutDiv = document.getElementById("aboutShinchan");
+      if (aboutDiv.style.display === "block") {
+        aboutDiv.style.display = "none";
+      } else {
+        aboutDiv.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

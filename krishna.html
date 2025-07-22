@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Gallery</title>
+  <style>
+    @media (max-width: 768px) {
+  .gallery img {
+    width: 90%;
+  }
+}
+
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: pink;
+  margin: 0;
+  padding: 0;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+section{
+  padding: 100;
+}
+header {
+  background-color: indigo;
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+  background-color: pink;
+}
+section img {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px aqua;
+}
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin: 10px;
+  display: flex;
+}
+.gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px; 
+      padding: 20px;
+    }
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+h1{
+  font-size: 70px;
+  font-style: italic;
+}
+.circle img {
+  border-radius: 50%;
+}
+.card a {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4b0082;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Cartoon Gallery</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2 >About This Website</h2>
+      <p><p>
+  Welcome to the <strong>Cartoon Gallery</strong> – the ultimate playground for your childhood memories! 🌈 From the mischievous pranks of <em>Shinchan</em> to the adventurous duo <em>Huddy & Buddi</em>, and the unstoppable fun of <em>Oggy, Motu Patlu, Heidi</em> and more – this site brings all your favorite characters together in one magical space. Each cartoon has its own colorful world waiting to be explored, with images, stories, and videos that bring their charm to life. Whether you're reliving your golden cartoon days or discovering new ones, this gallery is your happy place! 🎉🧒📺
+</p>
+</p><br>
+      <nav>
+  <div class="gallery">
+       <div class="card circle">
+       <a href="sinchan.html" class="card ">
+       <img src="download.jpeg" alt="Sinchan" width="250">
+       <p> SINCHAN</p>
+       </a>
+       </div> 
+      <div class="card circle">
+       <a href="heidi.html" class="card">
+       <img src="Heidi.jpeg" alt="Heidi" width="250">
+       <p>HEIDI</p>
+       </a>
+      </div>
+      <div class="card circle">
+       <a href="oggy.html" class="card">
+       <img src="oggy.webp" alt="Oggy" width="250">
+       <p>OGGY</p>
+       </a>
+      </div>
+      <div class="card circle">
+       <a href="buddy.html" class="card">
+       <img src="huddybuddy.jpeg" alt="Huddy Buddy" width="250">
+       <p>HUDDY-BUDDY</p>
+       </a>
+      </div>
+      <div class="card circle">
+       <a href="motu.html" class="card">
+       <img src="pathulu.avif" alt="Motu Pathulu" width="250">
+       <p>MOTU-PATHULU</p>
+       </a>
+      </div>
+
+
+    
+  
+  </nav>
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>Made By @KONETISETTY PRASANNA</p>
+  </footer>
+</body>
+</html>
