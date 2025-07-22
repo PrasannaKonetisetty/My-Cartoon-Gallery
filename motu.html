@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motu Pathulu | Cartoon Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    h1{
+      background-color: black;
+      color : whitesmoke; 
+      padding: 50px;
+      text-align: center;
+    }
+    footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin: 10px;
+  display: flex;
+}
+.gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px; 
+      padding: 20px;
+    }
+
+section{
+  padding: 15px;
+ background-color: lightblue;
+}
+p{
+  text-align: center;
+}
+.btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: deeppink;
+}
+
+.story-card {
+  display: none;
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1{
+  font-size: 70;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Motu Patlu - Trouble & Comedy</h1>
+  </header>
+  <section>
+     <div class="content">
+      <h2>About MOTU-PATHULU</h2>
+    <button class="btn" onclick="toggleAbout()">📖 Show About Motu-Pathulu</button>
+
+    <div class="story-card" id="aboutMotu-Pathulu">
+      <p>
+        Motu loves samosas 🍽️ and Patlu is the brainy one 🧠.<br>
+        They live in Furfuri Nagar and face daily adventures 🤹.<br>
+        Dr. Jhatka gives crazy gadgets and Ghasitaram says “20 years ka experience” 🤖.<br>
+        Inspector Chingam tries to catch thieves but ends up falling 😂.<br>
+        Motu gets power after eating samosas and fights bad guys 🥷.<br>
+        Their friendship is very deep – always helping each other 💪.<br>
+        Some episodes show their sadness when someone leaves town 😢.<br>
+        They even risk their lives to protect others 🛡️.<br>
+        Even villains like John the Don become funny with their actions 😆.<br>
+        It’s a cartoon full of friendship, courage, and endless fun 🎊.<br>
+      </p>
+    </div>
+
+    <div class="gallery">
+  
+      <img src="mp1.jpeg" alt="Motupathulu Image 1">
+      <img src="mp2.jpeg" alt="Motupathulu  Image 2">
+      <img src="mp3.jpeg" alt="Motupathulu  Image 3">
+      <img src="mp4.jpeg" alt="Motupathulu  Image 4">
+      <img src="mp5.jpeg" alt="Motupathulu  Image 5">
+      <img src="mp6.jpeg" alt="Motupathulu  Image 6">
+      <img src="mp7.jpeg" alt="Motupathulu Image7">
+      <img src="mp8.jpeg" alt="Motupathulu Image 8">
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>Made By KONETISETTY PRASANNA</p>
+  </footer>
+  <script>
+    function toggleAbout() {
+      const aboutDiv = document.getElementById("aboutMotu-Pathulu");
+      if (aboutDiv.style.display === "block") {
+        aboutDiv.style.display = "none";
+      } else {
+        aboutDiv.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

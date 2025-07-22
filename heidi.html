@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heidi | Cartoon Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    h1{
+      background-color: black;
+      color : whitesmoke; 
+      padding: 50px;
+      text-align: center;
+    }
+    footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin: 10px;
+  display: flex;
+}
+.gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 20px; 
+      padding: 20px;
+    }
+
+section{
+  padding: 15px;
+ background-color: lightblue;
+}
+p{
+  text-align: center;
+}
+.btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: deeppink;
+}
+
+.story-card {
+  display: none;
+  margin-top: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1{
+  font-size: 70;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Heidi - Girl of the Alps</h1>
+  </header>
+  <section>
+     <div class="content">
+      <h2>About Heidi</h2>
+    <button class="btn" onclick="toggleAbout()">📖 Show About Heidi</button>
+
+    <div class="story-card" id="aboutHeidi">
+      <p>
+       Heidi is a sweet mountain girl 🧒 who lives with her grandpa in the Alps 🏔️.<br>
+      She enjoys the fresh air, goats 🐐, and beautiful nature 🌸.<br>
+      She meets Peter and they become best friends 🧒👧.<br>
+      One day, she is sent to the city to help Clara, a disabled girl ♿.<br>
+      Heidi feels sad in the city – she misses her mountains and grandpa 😢.<br>
+      But she brings joy to Clara and helps her walk again ❤️.<br>
+      She finally returns home, and Clara visits too – emotional moment 🥺.<br>
+      Heidi teaches kindness, nature love, and courage 🌳💖.<br>
+      We smile when she runs on hills and cry when she’s homesick 😔.<br>
+      It’s a touching story of simplicity, strength, and pure heart 💫.
+      </p>
+    </div>
+
+    <div class="gallery">
+  
+      <img src="heidi1.jpeg" alt="Heidi Image 1">
+      <img src="heidi2.jpeg" alt="Heidi Image 2">
+      <img src="heidi3.jpeg" alt="Heidi Image 3">
+      <img src="heidi4.jpeg" alt="Heidi Image 4">
+      <img src="heidi5.jpeg" alt="Heidi Image 5">
+      <img src="heidi6.jpeg" alt="Heidi Image 6">
+      <img src="heidi7.jpeg" alt="Heidi Image 7">
+      <img src="heidi8.jpeg" alt="Heidi Image 8">
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>Made By KONETISETTY PRASANNA</p>
+  </footer>
+  <script>
+    function toggleAbout() {
+      const aboutDiv = document.getElementById("aboutHeidi");
+      if (aboutDiv.style.display === "block") {
+        aboutDiv.style.display = "none";
+      } else {
+        aboutDiv.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
